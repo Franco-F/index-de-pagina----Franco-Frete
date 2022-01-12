@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  display: 0;
+}
+
+body {
+  background-color: #025b8f;
+}
+
+h1, .texto {
+  color: white;
+}
+
+h1, .divisor, .texto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.foto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 15%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  text-align: center;
+  margin-left: 33%;
+}
+.container .explicacion {
+  color: yellow;
+}
+
+.foto #naturaleza {
+  margin: 5px;
+}
+.foto #gato {
+  margin: 5px;
+}
+.foto #perro {
+  margin: 5px;
+}
+.foto #pajaro {
+  margin: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
