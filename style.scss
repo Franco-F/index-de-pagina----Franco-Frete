@@ -53,3 +53,50 @@ h1, .divisor, .texto{
         margin: 5px;
     }
 }
+
+$redes: (
+    size1: 20px,
+    size2: 40px,
+    size3: 80px,
+);
+
+$redes2: (
+    color1: yellow,
+    color2: magenta,
+    color3: red,
+);
+
+@each $key, $value in $redes {
+    .red--#{$key} {
+        font-size: $value;
+    }
+}
+
+@each $key2, $value2 in $redes2 {
+    .red--#{$key2} {
+        color: $value2;
+    }
+}
+
+@mixin margenes($margin) {
+    margin: $margin;
+}
+
+@mixin textShadow($textShadow) {
+    text-shadow: 1px 1px 1px black;
+    font-family: cursive;
+}
+
+@for $i from 1 through 3 {
+    .red--color#{$i} {
+        @include margenes(10px);
+        @include textShadow(black);
+        font-family: sans-serif;   
+        @extend .texto;
+    }
+}
+
+.map-get{
+    font-size: map-get($map: $redes, $key: size2);
+    color: map-get($map: $redes2, $key: color3);
+}

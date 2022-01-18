@@ -7,11 +7,11 @@ body {
   background-color: #025b8f;
 }
 
-h1, .texto {
+h1, .texto, .red--color3, .red--color2, .red--color1 {
   color: white;
 }
 
-h1, .divisor, .texto {
+h1, .divisor, .texto, .red--color3, .red--color2, .red--color1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -46,6 +46,56 @@ h1, .divisor, .texto {
 }
 .foto #pajaro {
   margin: 5px;
+}
+
+.red--size1 {
+  font-size: 20px;
+}
+
+.red--size2 {
+  font-size: 40px;
+}
+
+.red--size3 {
+  font-size: 80px;
+}
+
+.red--color1 {
+  color: yellow;
+}
+
+.red--color2 {
+  color: magenta;
+}
+
+.red--color3 {
+  color: red;
+}
+
+.red--color1 {
+  margin: 10px;
+  text-shadow: 1px 1px 1px black;
+  font-family: cursive;
+  font-family: sans-serif;
+}
+
+.red--color2 {
+  margin: 10px;
+  text-shadow: 1px 1px 1px black;
+  font-family: cursive;
+  font-family: sans-serif;
+}
+
+.red--color3 {
+  margin: 10px;
+  text-shadow: 1px 1px 1px black;
+  font-family: cursive;
+  font-family: sans-serif;
+}
+
+.map-get {
+  font-size: 40px;
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
